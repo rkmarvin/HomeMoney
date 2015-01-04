@@ -1,17 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="money.home.MoneyHome">
-  <grid id="27dc6" binding="panel1" default-binding="true" layout-manager="FormLayout">
+  <grid id="27dc6" binding="basePanel" layout-manager="FormLayout">
     <rowspec value="center:d:noGrow"/>
+    <rowspec value="top:3dlu:noGrow"/>
+    <rowspec value="center:d:grow"/>
+    <colspec value="fill:d:grow"/>
+    <colspec value="left:4dlu:noGrow"/>
     <colspec value="fill:d:grow"/>
     <constraints>
-      <xy x="20" y="20" width="500" height="400"/>
+      <xy x="20" y="20" width="691" height="495"/>
     </constraints>
-    <properties/>
+    <properties>
+      <preferredSize width="308" height="308"/>
+    </properties>
     <border type="none"/>
     <children>
       <toolbar id="f25d7">
         <constraints>
-          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+          <grid row="0" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
             <preferred-size width="-1" height="20"/>
           </grid>
           <forms defaultalign-horz="false"/>
@@ -27,6 +33,32 @@
           </component>
         </children>
       </toolbar>
+      <component id="fa816" class="javax.swing.JList" binding="accountsList">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="50"/>
+          </grid>
+          <forms defaultalign-vert="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="test account &#9;123"/>
+          </model>
+        </properties>
+      </component>
+      <component id="61a50" class="javax.swing.JList" binding="accountDetailList">
+        <constraints>
+          <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="2" anchor="0" fill="3" indent="0" use-parent-layout="false">
+            <preferred-size width="150" height="50"/>
+          </grid>
+          <forms defaultalign-vert="false"/>
+        </constraints>
+        <properties>
+          <model>
+            <item value="04.04.2004&#9;-10"/>
+          </model>
+        </properties>
+      </component>
     </children>
   </grid>
 </form>
